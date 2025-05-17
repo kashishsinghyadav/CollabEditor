@@ -24,7 +24,7 @@ function Editor() {
     const id = 'user-' + Math.random().toString(36).substring(2);
     const parentId = rga.getState().at(-1)?.id ?? null;
     rga.insertAfter(parentId, plain.slice(-1), id);
-    sendOp({ id, value: plain.slice(-1), parentId });
+   sendOp({ id, value: plain.slice(-1), parentId, visible: true });
     setText(rga.getVisibleText());
   };
 
