@@ -1,8 +1,8 @@
 function Editor() {
   return (
     <div style={{ padding: 40 }}>
-      <h1>✅ Editor is working!</h1>
-      <textarea rows={10} cols={60} placeholder="Start typing..." />
+      <h1>✅ The Editor is rendering!</h1>
+      <textarea placeholder="Start typing..." rows={10} cols={60} />
       <br />
       <button>💾 Save</button>
     </div>
